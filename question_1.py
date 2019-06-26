@@ -19,7 +19,18 @@ q = """
 # the data is stored in the 'result' variable
 result = pd.read_sql(q, conn)
 
+print("======")
+print("First Ten Rows")
+print("------")
 print(result.head(10))
+print("======\n\n\n")
+
+print("======")
+print("Last Ten Rows")
+print("------")
+print(result.tail(10))
+print("======\n\n\n")
+
 
 # close the connection to the database
 conn.close()
